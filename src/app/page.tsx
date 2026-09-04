@@ -1,0 +1,34 @@
+import { About } from "@/components/About";
+import { FinalCta } from "@/components/FinalCta";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { HowItWorks } from "@/components/HowItWorks";
+import { LeadMagnet } from "@/components/LeadMagnet";
+import { Packages } from "@/components/Packages";
+import { Programs } from "@/components/Programs";
+import { Testimonials } from "@/components/Testimonials";
+import { TrustBar } from "@/components/TrustBar";
+
+export default function HomePage() {
+  return (
+    <>
+      <a href="#main" className="skip-link">
+        Skip to content
+      </a>
+      <Header />
+      <main id="main">
+        <Hero />
+        <TrustBar />
+        <Programs />
+        <Packages />
+        <HowItWorks />
+        <About />
+        <LeadMagnet />
+        <Testimonials />
+        <FinalCta />
+      </main>
+      <Footer />
+    </>
+  );
+}
