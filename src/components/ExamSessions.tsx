@@ -1,4 +1,8 @@
-const SESSIONS = ["October / November", "March (India)", "May / June"];
+const SESSIONS = [
+  { when: "October / November", where: "Worldwide" },
+  { when: "March", where: "India (limited centres)" },
+  { when: "May / June", where: "Worldwide" },
+];
 
 export function ExamSessions() {
   return (
@@ -23,10 +27,12 @@ export function ExamSessions() {
           <ul className="mt-6 flex flex-wrap items-center justify-center gap-3">
             {SESSIONS.map((session) => (
               <li
-                key={session}
+                key={session.when}
                 className="rounded-full border border-white/15 bg-navy-mid/70 px-4 py-2 text-sm font-medium text-cream"
               >
-                {session}
+                <span>{session.when}</span>
+                <span className="mx-1.5 text-cream/40">·</span>
+                <span className="text-gold-soft">{session.where}</span>
               </li>
             ))}
           </ul>
