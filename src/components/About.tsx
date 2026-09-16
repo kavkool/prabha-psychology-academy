@@ -4,7 +4,7 @@ import { EDUCATOR_NAME } from "@/lib/site";
 const CREDENTIALS = [
   "Cambridge A-Level Psychology Examiner",
   "17+ years teaching experience",
-  "Psychology teacher, Nairobi International School (2016–2023)",
+  "Psychology teacher, Nairobi International School (2016-2023)",
   "M.A. Counselling & Psychotherapy · M.Sc. Rehabilitation Science",
   "B.Ed. · Tamil Nadu Open University",
   "School counselor & psychotherapist",
@@ -64,7 +64,7 @@ export function About() {
             <p>
               I coach Cambridge IGCSE/GCSE, A Level 9990, and AQA with the same
               care I bring to marking: clear technique, honest feedback, and a
-              student-centered pace. My aim is simple — help you do well in the
+              student-centered pace. My aim is simple: help you do well in the
               exam and leave with a real understanding of psychology, not just
               notes.
             </p>

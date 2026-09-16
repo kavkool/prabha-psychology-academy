@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { HowItWorks } from "@/components/HowItWorks";
+import { IntroVideo } from "@/components/IntroVideo";
 import { Prerequisites } from "@/components/Prerequisites";
 import { Programs } from "@/components/Programs";
 import { Testimonials } from "@/components/Testimonials";
@@ -25,6 +26,7 @@ export default function HomePage() {
         <Prerequisites />
         <ExamSessions />
         <About />
+        <IntroVideo />
         <Testimonials />
         <FinalCta />
       </main>
