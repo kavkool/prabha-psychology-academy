@@ -15,7 +15,7 @@ const LOGISTICS = [
   },
   {
     title: "Payment",
-    body: "Payment details are shared when you book. Enquire for payment options — no checkout on this site yet.",
+    body: "Payment details are shared after booking.",
   },
 ];
 
@@ -38,8 +38,7 @@ export function LessonLogistics() {
             How lessons work
           </h2>
           <p className="mt-4 text-ink-muted">
-            Practical details first — so booking feels simple. A full calendar
-            scheduling flow is coming; for now, email to book your free trial.
+            Practical details first — so booking feels simple. A calendar booking link is coming soon — for now, email to book your free trial.
           </p>
         </div>
 
