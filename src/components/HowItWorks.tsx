@@ -8,7 +8,7 @@ const STEPS = [
   },
   {
     n: "02",
-    title: "Choose a pathway",
+    title: "Choose how to learn",
     body: "AS, A Level, fast-track, or 1:1, matched to your exam date — or book a paid lesson when ready.",
   },
   {

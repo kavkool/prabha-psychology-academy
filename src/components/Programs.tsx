@@ -1,6 +1,6 @@
 import { BOOKING_URL, PAID_BOOKING_URL } from "@/lib/site";
 
-const PROGRAMS = [
+const EXAMS = [
   {
     code: "IGCSE · GCSE",
     title: "Cambridge IGCSE & GCSE",
@@ -30,10 +30,10 @@ const PROGRAMS = [
   },
 ];
 
-const PATHWAYS = [
+const WAYS_TO_LEARN = [
   {
     name: "AS Level course",
-    blurb: "Structured pathway from first principles to exam-ready writing.",
+    blurb: "Structured course from first principles to exam-ready writing.",
     includes: [
       "Syllabus map & pacing",
       "Live coaching + weekly goals",
@@ -43,7 +43,7 @@ const PATHWAYS = [
   },
   {
     name: "A Level course",
-    blurb: "Full pathway for Cambridge 9990 or AQA: content, evaluation, papers.",
+    blurb: "Full course for Cambridge 9990 or AQA: content, evaluation, papers.",
     includes: [
       "Full-course syllabus map",
       "Weekly coaching + written feedback",
@@ -83,7 +83,7 @@ export function Programs() {
       <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-teal">
-            Programs & pathways
+            Offerings
           </p>
           <h2
             id="programs-heading"
@@ -92,45 +92,53 @@ export function Programs() {
             What we offer
           </h2>
           <p className="mt-3 text-sm text-ink-muted">
-            Exam-board coaching and course pathways. Pricing on enquiry.{" "}
+            Exam-board coaching and flexible ways to learn. Pricing on enquiry.{" "}
             <span className="font-semibold text-navy">
               Start with a free trial, or book a paid lesson.
             </span>
           </p>
         </div>
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-3">
-          {PROGRAMS.map((program) => (
-            <article
-              key={program.code}
-              className="relative flex flex-col rounded-2xl border border-navy/10 bg-cream-paper p-5 sm:p-6"
-            >
-              <p className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-teal">
-                {program.code}
-              </p>
-              <h3 className="mt-1.5 font-display text-lg font-semibold text-navy">
-                {program.title}
-              </h3>
-              <ul className="mt-4 space-y-2 text-sm text-navy-mid">
-                {program.points.map((point) => (
-                  <li key={point} className="flex gap-2">
-                    <span aria-hidden className="text-gold">
-                      ▹
-                    </span>
-                    {point}
-                  </li>
-                ))}
-              </ul>
-            </article>
-          ))}
+        <div className="mt-10">
+          <h3 className="text-center text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-teal">
+            Exams we teach
+          </h3>
+          <div className="mt-6 grid gap-5 lg:grid-cols-3">
+            {EXAMS.map((exam) => (
+              <article
+                key={exam.code}
+                className="relative flex flex-col rounded-2xl border border-navy/10 bg-cream-paper p-5 sm:p-6"
+              >
+                <p className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-teal">
+                  {exam.code}
+                </p>
+                <h4 className="mt-1.5 font-display text-lg font-semibold text-navy">
+                  {exam.title}
+                </h4>
+                <ul className="mt-4 space-y-2 text-sm text-navy-mid">
+                  {exam.points.map((point) => (
+                    <li key={point} className="flex gap-2">
+                      <span aria-hidden className="text-gold">
+                        ▹
+                      </span>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
         </div>
 
         <div className="mt-12">
           <h3 className="text-center text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-teal">
-            Pathways — enquire for details
+            Ways to learn
           </h3>
+          <p className="mt-2 text-center text-xs font-semibold uppercase tracking-[0.12em] text-ink-muted">
+            Details on enquiry
+          </p>
           <div className="mt-6 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
-            {PATHWAYS.map((item) => (
+            {WAYS_TO_LEARN.map((item) => (
               <article
                 key={item.name}
                 className="flex flex-col rounded-2xl border border-navy/10 bg-cream-paper p-5 text-navy shadow-card sm:p-6"
@@ -139,7 +147,7 @@ export function Programs() {
                   {item.name}
                 </h4>
                 <p className="mt-1 text-xs font-semibold uppercase tracking-[0.12em] text-teal">
-                  Enquire
+                  Enquire for details
                 </p>
                 <p className="mt-3 text-sm leading-snug text-ink-muted">
                   {item.blurb}

@@ -64,7 +64,7 @@ export function consultationMailto(email: string = CONTACT_EMAIL): string {
 }
 
 export const NAV_LINKS = [
-  { href: "#programs", label: "Programs" },
+  { href: "#programs", label: "Offerings" },
   { href: "#how-it-works", label: "How it works" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
