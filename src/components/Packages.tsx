@@ -1,49 +1,64 @@
-import { CONTACT_EMAIL, consultationMailto } from "@/lib/site";
+import { CONTACT_EMAIL, trialMailto } from "@/lib/site";
 
 const PACKAGES = [
   {
-    name: "1:1 Exam Coaching",
-    price: "From $600–$800",
-    cadence: "8 × 60-minute sessions",
+    name: "AS Level course",
+    price: "Enquire",
+    cadence: "Completion-oriented pathway",
     summary:
-      "A focused burst of examiner-informed coaching: essay feedback, targeted technique, and a mock with comments you can actually act on.",
+      "A structured AS Level course designed to take you from first principles through to exam-ready writing — syllabus coverage, practice, and feedback, not just last-minute drills.",
     includes: [
-      "Eight private 60-minute sessions",
-      "Written essay / evaluation feedback",
-      "One full mock with examiner-style marks",
-      "Personal study plan between sessions",
+      "Full AS syllabus map and pacing",
+      "Live coaching sessions with clear weekly goals",
+      "Essay / short-answer feedback",
+      "Mock practice before your exam series",
     ],
-    cta: "Discuss this package",
+    cta: "Enquire about AS course",
     featured: false,
   },
   {
-    name: "A Level Grade A/A* Program",
-    price: "$900–$1,500",
-    cadence: "12 weeks, comprehensive",
+    name: "A Level course",
+    price: "Enquire",
+    cadence: "Full course pathway",
     summary:
-      "The flagship 9990 pathway: syllabus coverage, evaluation depth, Issues & Debates, research methods, and timed paper practice until the writing is examiner-ready.",
+      "The complete A Level pathway (including Cambridge 9990 and AQA options): content depth, evaluation, research methods, Issues & Debates, and timed paper practice until the writing is examiner-ready.",
     includes: [
-      "12-week structured syllabus map",
+      "Structured full-course syllabus map",
       "Weekly coaching + written feedback",
-      "Paper 1–4 technique drills",
-      "Mocks, grade tracking, and exam-week plan",
+      "Paper technique across your exam set",
+      "Mocks, progress check-ins, and exam-week plan",
     ],
-    cta: "Start with a consultation",
+    cta: "Enquire about A Level course",
     featured: true,
   },
   {
-    name: "Small-group Exam Bootcamp",
+    name: "Fast-track courses",
     price: "Enquire",
-    cadence: "4–6 students",
+    cadence: "Accelerated syllabus finish",
     summary:
-      "Intensive, small-group exam prep — high energy, shared marking insights, and enough individual attention to correct the mistakes that cost grades.",
+      "For students who need to complete the syllabus at a fast pace — condensed coverage, focused practice, and clear priorities so you stay on track for your exam date.",
     includes: [
-      "Limited to 4–6 students",
-      "Timed exam practice",
-      "Peer + examiner-style feedback",
-      "Dates set around your exam series",
+      "Accelerated syllabus plan around your date",
+      "High-frequency sessions (as agreed)",
+      "Priority topics and mark-earning skills",
+      "Targeted mocks before the exam",
     ],
-    cta: "Enquire about a bootcamp",
+    cta: "Enquire about fast-track",
+    featured: false,
+  },
+  {
+    name: "1:1 flexible coaching",
+    price: "Enquire",
+    cadence: "Single lessons or ongoing",
+    summary:
+      "Private coaching that flexes with you — book a single lesson, keep a weekly slot, or mix both. Ideal for targeted technique work, catch-up, or ongoing support alongside school.",
+    includes: [
+      "Single lessons or a reserved weekly slot",
+      "Examiner-informed feedback on your writing",
+      "Study plan between sessions when needed",
+      "Free 20-minute trial lesson to start",
+    ],
+    cta: "Book a free trial lesson",
     featured: false,
   },
 ];
@@ -58,22 +73,24 @@ export function Packages() {
       <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-teal">
-            Packages
+            Courses & coaching
           </p>
           <h2
             id="packages-heading"
             className="mt-3 font-display text-3xl font-semibold tracking-tight text-navy sm:text-4xl"
           >
-            Outcome-oriented coaching, not hourly drift
+            Course pathways — and flexible 1:1 when you need it
           </h2>
           <p className="mt-4 text-ink-muted">
-            Each package is built around a grade target, a syllabus, and
-            examiner-style feedback — so time in sessions turns into marks on
-            the paper.
+            Choose a completion-oriented course or flexible private coaching.
+            Pricing is shared when you enquire.{" "}
+            <span className="font-semibold text-navy">
+              Trial classes are free.
+            </span>
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {PACKAGES.map((item) => (
             <article
               key={item.name}
@@ -84,7 +101,7 @@ export function Packages() {
               }`}
             >
               <h3
-                className={`font-display text-2xl font-semibold ${
+                className={`font-display text-xl font-semibold sm:text-2xl ${
                   item.featured ? "text-cream" : "text-navy"
                 }`}
               >
@@ -97,7 +114,7 @@ export function Packages() {
               >
                 {item.cadence}
               </p>
-              <p className="mt-4 font-display text-3xl font-semibold">
+              <p className="mt-4 font-display text-2xl font-semibold sm:text-3xl">
                 {item.price}
               </p>
               <p
@@ -121,7 +138,7 @@ export function Packages() {
                 ))}
               </ul>
               <a
-                href={consultationMailto(CONTACT_EMAIL)}
+                href={trialMailto(CONTACT_EMAIL)}
                 className={`mt-8 inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition-colors ${
                   item.featured
                     ? "bg-gold text-navy-deep hover:bg-gold-soft"

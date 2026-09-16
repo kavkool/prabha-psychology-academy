@@ -1,6 +1,6 @@
 # Prabha Psychology Academy
 
-Marketing landing page for **Prabha Psychology Academy** — Cambridge Psychology exam coaching with Prabhadevi Malarkannan (Cambridge Psychology Examiner and international Psychology educator).
+Marketing landing page for **Prabha Psychology Academy** — Cambridge and AQA Psychology coaching with Prabhadevi Malarkannan (Cambridge Psychology Examiner and international Psychology educator).
 
 Built with Next.js (App Router), TypeScript, and Tailwind CSS.
 
@@ -28,10 +28,12 @@ npm start
 | --- | --- |
 | Contact email | `.env.local` → `NEXT_PUBLIC_CONTACT_EMAIL` (falls back to `CONTACT_EMAIL`, then `hello@prabhapsychology.com`) |
 | Instagram | `.env.local` → `NEXT_PUBLIC_INSTAGRAM_URL` and `INSTAGRAM_HANDLE` in `src/lib/site.ts` |
-| Consultation mailto copy | `src/lib/site.ts` (`CONSULTATION_SUBJECT`, `CONSULTATION_BODY`) |
-| Testimonials | `src/components/Testimonials.tsx` — all three quotes are **placeholders** labelled "Sample — replace with real quotes" |
-| Packages / pricing | `src/components/Packages.tsx` |
+| Free trial mailto copy | `src/lib/site.ts` (`TRIAL_SUBJECT`, `TRIAL_BODY`) |
+| Testimonials | `src/components/Testimonials.tsx` |
+| Courses / packages | `src/components/Packages.tsx` |
 | About copy | `src/components/About.tsx` |
+| Lesson logistics | `src/components/LessonLogistics.tsx` |
+| Cambridge exam sessions | `src/components/ExamSessions.tsx` |
 
 `hello@prabhapsychology.com` and Instagram `@prabhapsychology` are placeholders until real inboxes and profiles are live.
 
@@ -53,9 +55,18 @@ To wire this for production, replace the submit handler in `src/components/LeadM
 
 Keep the success message and never store addresses in git.
 
-## Deploy (Vercel, later)
+## Not built yet (intentional placeholders)
 
-1. Push this folder to a GitHub / Origin repo.
+- Real calendar / scheduling UI
+- Real payment checkout
+- Live chat widget
+- Dynamic timezone converter
+
+Booking is mailto-based; payment details are shared when students book.
+
+## Deploy (Vercel)
+
+1. Push this folder to GitHub.
 2. Import the repo in Vercel (https://vercel.com).
 3. Set `NEXT_PUBLIC_CONTACT_EMAIL` (and optional `NEXT_PUBLIC_INSTAGRAM_URL`) in project environment variables.
 4. Deploy. Framework preset: Next.js.
@@ -63,5 +74,7 @@ Keep the success message and never store addresses in git.
 ## Brand notes
 
 - No fabricated accreditation logos, awards, or student-count claims.
-- Testimonials must stay labelled as samples until real permissioned quotes exist.
-- Focus of the academy: Psychology exam coaching (IGCSE, A Level 9990, AP, IB). SPED / counselling is background credibility only.
+- Curricula featured: Cambridge IGCSE/GCSE Psychology, Cambridge A Level Psychology (9990), AQA Psychology.
+- Exam-oriented core plus beyond-the-exam value (apply psychology to real life; understand yourself and others; change perspective).
+- Private candidates welcome; no prior Psychology knowledge required for A Level.
+- SPED / counselling background is credibility only — not a separate counselling practice offering on this site.

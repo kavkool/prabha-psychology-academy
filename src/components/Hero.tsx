@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL, consultationMailto } from "@/lib/site";
+import { CONTACT_EMAIL, trialMailto } from "@/lib/site";
 
 export function Hero() {
   return (
@@ -33,20 +33,28 @@ export function Hero() {
             id="hero-heading"
             className="font-display text-4xl font-semibold leading-[1.12] tracking-tight text-balance sm:text-5xl lg:text-[3.35rem]"
           >
-            Master Psychology. Write Like an Examiner. Achieve Your Best Grade.
+            Master Psychology. Write Like an Examiner. Change How You See Life.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-cream/80">
             Cambridge Psychology Examiner and experienced international
-            Psychology educator providing specialized IGCSE, A Level, AP and IB
-            Psychology tutoring — focused on exam technique, evaluation, and
-            examiner-style feedback.
+            Psychology educator offering specialized Cambridge IGCSE/GCSE,
+            Cambridge A Level (9990), and AQA Psychology coaching — exam
+            technique and examiner-style feedback, plus psychology you can apply
+            to understand yourself, others, and the world around you.
+          </p>
+          <p className="mt-4 max-w-xl text-sm leading-relaxed text-cream/65">
+            No prior knowledge needed for A Level Psychology. Private candidates
+            welcome.{" "}
+            <span className="font-semibold text-gold-soft">
+              Trial classes are free.
+            </span>
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
-              href={consultationMailto(CONTACT_EMAIL)}
+              href={trialMailto(CONTACT_EMAIL)}
               className="inline-flex items-center justify-center rounded-full bg-gold px-6 py-3.5 text-center text-sm font-semibold text-navy-deep shadow-lg shadow-navy-deep/20 transition-transform hover:-translate-y-0.5 hover:bg-gold-soft"
             >
-              Book a free 20-minute Exam Strategy Consultation
+              Book a free 20-minute trial lesson
             </a>
             <a
               href="#programs"
@@ -60,17 +68,17 @@ export function Hero() {
         <aside className="lg:col-span-5">
           <div className="rounded-2xl border border-white/10 bg-navy-mid/50 p-6 shadow-lift backdrop-blur-sm sm:p-7">
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-gold-soft">
-              Examiner-level coaching
+              Exam-ready · Life-ready
             </p>
             <p className="mt-2 font-display text-2xl font-medium text-cream">
-              Learn to write the answers examiners look for.
+              Strong grades — and a clearer lens on people and yourself.
             </p>
             <ul className="mt-6 space-y-3 text-sm leading-relaxed text-cream/80">
               {[
-                "Exam technique for IGCSE, A Level 9990, AP and IB",
+                "Cambridge IGCSE/GCSE, A Level 9990 & AQA Psychology",
                 "Essay and evaluation writing that earns marks",
-                "Research methods and Issues & Debates",
-                "Examiner-style marking, mocks, and study plans",
+                "Apply psychology to real life and relationships",
+                "Private candidates supported end-to-end",
               ].map((item) => (
                 <li key={item} className="flex gap-3">
                   <span

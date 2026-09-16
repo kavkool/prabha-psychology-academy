@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CONTACT_EMAIL, NAV_LINKS, consultationMailto } from "@/lib/site";
+import { CONTACT_EMAIL, NAV_LINKS, trialMailto } from "@/lib/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -39,7 +39,7 @@ export function Header() {
           </span>
         </a>
 
-        <nav aria-label="Primary" className="hidden items-center gap-7 lg:flex">
+        <nav aria-label="Primary" className="hidden items-center gap-6 xl:flex">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
@@ -53,14 +53,14 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <a
-            href={consultationMailto(CONTACT_EMAIL)}
+            href={trialMailto(CONTACT_EMAIL)}
             className="hidden rounded-full bg-navy px-4 py-2 text-sm font-semibold text-cream transition-colors hover:bg-teal sm:inline-flex"
           >
-            Book a consultation
+            Free trial lesson
           </a>
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-navy/15 text-navy lg:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-navy/15 text-navy xl:hidden"
             aria-expanded={open}
             aria-controls="mobile-nav"
             onClick={() => setOpen((value) => !value)}
@@ -82,7 +82,7 @@ export function Header() {
       {open ? (
         <div
           id="mobile-nav"
-          className="border-t border-navy/10 bg-cream px-4 py-4 lg:hidden"
+          className="border-t border-navy/10 bg-cream px-4 py-4 xl:hidden"
         >
           <nav aria-label="Mobile" className="flex flex-col gap-3">
             {NAV_LINKS.map((link) => (
@@ -96,11 +96,11 @@ export function Header() {
               </a>
             ))}
             <a
-              href={consultationMailto(CONTACT_EMAIL)}
+              href={trialMailto(CONTACT_EMAIL)}
               className="mt-1 rounded-full bg-navy px-4 py-2.5 text-center text-sm font-semibold text-cream"
               onClick={() => setOpen(false)}
             >
-              Book a consultation
+              Book a free trial lesson
             </a>
           </nav>
         </div>

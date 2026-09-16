@@ -1,18 +1,18 @@
 const STEPS = [
   {
     n: "01",
-    title: "Free consultation",
-    body: "A 20-minute Exam Strategy conversation. We talk syllabus, papers, and what best grade means for you — no pressure, no package pitch first.",
+    title: "Free trial lesson",
+    body: "A free 20-minute trial lesson. We talk syllabus, goals, and what best grade means for you — no pressure, no package pitch first.",
   },
   {
     n: "02",
     title: "Assess the starting point",
-    body: "We map your current syllabus, recent marks, target grade, and the specific skills (evaluation, methods, timing) that are costing marks.",
+    body: "We map your current syllabus, recent marks (if any), target grade, and the skills — evaluation, methods, timing — that will move the needle.",
   },
   {
     n: "03",
-    title: "Choose a package",
-    body: "1:1 coaching, the 12-week A/A* programme, or a small-group bootcamp — matched to exam date, curriculum, and how much support you need.",
+    title: "Choose a pathway",
+    body: "AS Level course, full A Level course, fast-track, or flexible 1:1 — matched to exam date, curriculum, and how much support you need.",
   },
   {
     n: "04",
@@ -37,7 +37,7 @@ export function HowItWorks() {
             id="how-heading"
             className="mt-3 font-display text-3xl font-semibold tracking-tight text-navy sm:text-4xl"
           >
-            From first conversation to exam-ready writing
+            From free trial to exam-ready writing
           </h2>
         </div>
 

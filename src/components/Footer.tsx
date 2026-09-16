@@ -15,8 +15,8 @@ export function Footer() {
             {SITE_NAME}
           </p>
           <p className="mt-3 max-w-xs text-sm leading-relaxed">
-            Cambridge Psychology exam coaching with examiner-level assessment
-            expertise.
+            Cambridge and AQA Psychology coaching — exam technique, real-life
+            insight, and examiner-level assessment expertise.
           </p>
         </div>
         <div>
@@ -25,9 +25,8 @@ export function Footer() {
           </p>
           <ul className="mt-3 space-y-2 text-sm">
             <li>Cambridge IGCSE &amp; GCSE Psychology</li>
-            <li>Cambridge AS and A Level Psychology (9990)</li>
-            <li>AP Psychology</li>
-            <li>IB Psychology (SL/HL)</li>
+            <li>Cambridge A Level Psychology (9990)</li>
+            <li>AQA Psychology</li>
           </ul>
         </div>
         <div>

@@ -2,7 +2,7 @@ const PROGRAMS = [
   {
     code: "IGCSE · GCSE",
     title: "Cambridge IGCSE & GCSE Psychology",
-    body: "Build a precise command of core studies, research methods, and structured exam answers across IGCSE and GCSE Psychology. Students learn how marks are awarded — not just what the syllabus lists.",
+    body: "Build a precise command of core studies, research methods, and structured exam answers across Cambridge IGCSE and GCSE Psychology. Students learn how marks are awarded — not just what the syllabus lists.",
     points: [
       "Core studies and application",
       "Research methods fluency",
@@ -11,7 +11,7 @@ const PROGRAMS = [
   },
   {
     code: "9990",
-    title: "Cambridge AS & A Level Psychology (9990)",
+    title: "Cambridge A Level Psychology (9990)",
     body: "Flagship programme. Examiner-informed coaching for Papers 1–4: approaches, core studies, research methods, and Issues, Debates and Approaches — including Clinical and other core options where the syllabus requires them — with evaluation that actually scores.",
     points: [
       "Essay structure and evaluation",
@@ -21,13 +21,13 @@ const PROGRAMS = [
     flagship: true,
   },
   {
-    code: "AP · IB",
-    title: "AP Psychology & IB Psychology",
-    body: "Targeted support for all 9 College Board–aligned AP units and IB Psychology SL/HL — Internal Assessment, SAQs, ERQs, and Paper 3 research methods — translated into the language each mark scheme rewards.",
+    code: "AQA",
+    title: "AQA Psychology",
+    body: "Exam technique coaching aligned to the AQA Psychology specification — clear AO coverage, evaluation that scores, and paper practice that mirrors how AQA rewards answers. Strong fit for school students and private candidates alike.",
     points: [
-      "AP: all 9 units + FRQ technique",
-      "IB SL/HL: SAQ / ERQ writing",
-      "IA and research-methods coaching",
+      "Specification-aligned content and AO focus",
+      "Essay and evaluation technique for AQA papers",
+      "Timed practice with actionable feedback",
     ],
   },
 ];
@@ -51,8 +51,9 @@ export function Programs() {
             Coaching matched to the exam you sit
           </h2>
           <p className="mt-4 text-ink-muted">
-            Same examiner mindset across every syllabus: teach students to write
-            answers that match how papers are actually marked.
+            Cambridge examiner mindset for Cambridge papers; AQA-aligned
+            technique for AQA — so students write answers that match how each
+            paper is actually marked.
           </p>
         </div>
 

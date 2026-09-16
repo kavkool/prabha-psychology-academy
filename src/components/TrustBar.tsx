@@ -4,7 +4,7 @@ const TRUST_ITEMS = [
   "800+ lessons",
   "4.7★ Preply",
   "IGCSE · GCSE",
-  "A Level · AP · IB",
+  "A Level · AQA",
 ];
 
 export function TrustBar() {

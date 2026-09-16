@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL, PREPLY_URL, consultationMailto } from "@/lib/site";
+import { CONTACT_EMAIL, PREPLY_URL, trialMailto } from "@/lib/site";
 
 export function FinalCta() {
   return (
@@ -16,22 +16,22 @@ export function FinalCta() {
           id="cta-heading"
           className="mt-3 font-display text-3xl font-semibold tracking-tight text-balance sm:text-4xl"
         >
-          Book a free 20-minute Exam Strategy Consultation
+          Book a free 20-minute trial lesson
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-cream/75">
-          Tell Prabha your syllabus, current grade, and target. Leave with a
-          clearer picture of what examiners reward — and whether coaching is
-          the right next move.
+          Trial classes are free. Tell Prabha your syllabus, whether you are a
+          private candidate, and your time zone. Leave with a clearer picture of
+          the pathway — and whether coaching is the right next move.
         </p>
         <a
-          href={consultationMailto(CONTACT_EMAIL)}
+          href={trialMailto(CONTACT_EMAIL)}
           className="mt-8 inline-flex items-center justify-center rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-navy-deep transition-transform hover:-translate-y-0.5 hover:bg-gold-soft"
         >
-          Email to book your consultation
+          Email to book your free trial lesson
         </a>
         <p className="mt-4 text-sm text-cream/60">{CONTACT_EMAIL}</p>
         <p className="mt-6 text-sm text-cream/50">
-          Prefer a trial lesson first?{" "}
+          Prefer booking via Preply?{" "}
           <a
             href={PREPLY_URL}
             rel="noreferrer"

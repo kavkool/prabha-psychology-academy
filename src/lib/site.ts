@@ -20,31 +20,39 @@ export const PREPLY_RATING = 4.67;
 export const YEARS_EXPERIENCE = 17;
 
 export const SEO_TITLE =
-  "Prabha Psychology Academy | Cambridge Psychology Exam Coaching";
+  "Prabha Psychology Academy | Cambridge & AQA Psychology Coaching";
 export const SEO_DESCRIPTION =
-  "Cambridge Psychology Examiner and international Psychology educator Prabhadevi Malarkannan coaches IGCSE, A Level (9990), AP and IB students in exam technique, evaluation writing, and examiner-style feedback.";
+  "Cambridge Psychology Examiner and international Psychology educator Prabhadevi Malarkannan coaches Cambridge IGCSE/GCSE, Cambridge A Level (9990), and AQA Psychology — exam technique, real-life understanding, and examiner-style feedback. Free trial lessons. Private candidates welcome.";
 
-export const CONSULTATION_SUBJECT =
-  "Free 20-minute Exam Strategy Consultation";
+export const TRIAL_SUBJECT = "Free 20-minute trial lesson";
 
-export const CONSULTATION_BODY = `Hi Prabha,
+export const TRIAL_BODY = `Hi Prabha,
 
-I would like to book a free 20-minute Exam Strategy Consultation.
+I would like to book a free 20-minute trial lesson.
 
 Name:
-Curriculum (IGCSE / A Level 9990 / AP / IB):
-Current grade / target grade:
+Curriculum (Cambridge IGCSE/GCSE / Cambridge A Level 9990 / AQA):
+Current grade / target grade (if any):
+Private candidate? (yes / no / not sure):
 Time zone:
 Anything I should know:
 
 Thank you.`;
 
-export function consultationMailto(email: string = CONTACT_EMAIL): string {
+/** @deprecated Use trialMailto — kept as alias for older imports */
+export const CONSULTATION_SUBJECT = TRIAL_SUBJECT;
+export const CONSULTATION_BODY = TRIAL_BODY;
+
+export function trialMailto(email: string = CONTACT_EMAIL): string {
   const params = new URLSearchParams({
-    subject: CONSULTATION_SUBJECT,
-    body: CONSULTATION_BODY,
+    subject: TRIAL_SUBJECT,
+    body: TRIAL_BODY,
   });
   return `mailto:${email}?${params.toString()}`;
+}
+
+export function consultationMailto(email: string = CONTACT_EMAIL): string {
+  return trialMailto(email);
 }
 
 export function leadMagnetMailto(
@@ -60,7 +68,8 @@ export function leadMagnetMailto(
 
 export const NAV_LINKS = [
   { href: "#programs", label: "Programs" },
-  { href: "#how-it-works", label: "How it works" },
+  { href: "#packages", label: "Courses" },
+  { href: "#lessons", label: "How lessons work" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ] as const;

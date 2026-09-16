@@ -46,8 +46,7 @@ export function About() {
             id="about-heading"
             className="mt-3 font-display text-3xl font-semibold tracking-tight text-navy sm:text-4xl"
           >
-            Examiner insight. Student-centered coaching. Global classroom
-            experience.
+            Examiner insight. Real-life psychology. Student-centered coaching.
           </h2>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-muted">
             <p>
@@ -56,7 +55,7 @@ export function About() {
               with more than 17 years of teaching experience. She taught
               Psychology and served as School Counselor at Nairobi International
               School (2016–2023), and brings that international classroom
-              experience into focused exam coaching.
+              experience into focused coaching.
             </p>
             <p>
               Her academic foundation includes a Master&apos;s in Counselling
@@ -67,6 +66,13 @@ export function About() {
               she meets different learners where they are.
             </p>
             <p>
+              Exam success is the core of this academy — Cambridge IGCSE/GCSE,
+              Cambridge A Level (9990), and AQA Psychology — but the work does
+              not stop at the paper. Students learn to apply psychology to real
+              life, understand themselves and others better, and leave with a
+              changed perspective on how people think, feel, and behave.
+            </p>
+            <p>
               In lessons she keeps the work student-centered: simplifying
               complex topics with real-life examples, interactive discussion,
               and exam-focused strategies that build strengths and confidence.
@@ -74,11 +80,21 @@ export function About() {
               actually marked — tight AO coverage, evaluation that earns, and
               research methods that are precise.
             </p>
-            <p>
-              The focus of this academy remains Psychology exam coaching —
-              IGCSE/GCSE, Cambridge A Level, AP, and IB — not a separate
-              counselling practice.
-            </p>
+          </div>
+
+          <div className="mt-8 grid gap-3 sm:grid-cols-3">
+            {[
+              "Apply psychology to real life",
+              "Understand yourself and others",
+              "Change your perspective on life",
+            ].map((item) => (
+              <p
+                key={item}
+                className="rounded-xl border border-teal/20 bg-teal-mist px-4 py-3 text-sm font-semibold text-navy"
+              >
+                {item}
+              </p>
+            ))}
           </div>
         </div>
       </div>

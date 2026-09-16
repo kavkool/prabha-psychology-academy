@@ -8,3 +8,5 @@
 .env*.local
 !.env.example
 *.tsbuildinfo
+.vercel
+.env*
