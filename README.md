@@ -1,6 +1,6 @@
 # Prabha Psychology Academy
 
-Marketing landing page for **Prabha Psychology Academy** — Cambridge and AQA Psychology coaching with Prabhadevi Malarkannan (Cambridge Psychology Examiner and international Psychology educator).
+Marketing landing page for **Prabha Psychology Academy**: Cambridge and AQA Psychology coaching with Prabhadevi Malarkannan (Cambridge Psychology Examiner and international Psychology educator).
 
 Built with Next.js (App Router), TypeScript, and Tailwind CSS.
 
@@ -59,4 +59,4 @@ Booking is mailto-based; payment details are shared when students book.
 - Curricula featured: Cambridge IGCSE/GCSE Psychology, Cambridge A Level Psychology (9990), AQA Psychology.
 - Exam-oriented core plus beyond-the-exam value (apply psychology to real life) in a single line of positioning.
 - Private candidates welcome; no prior Psychology knowledge required for A Level.
-- SPED / counselling background is credibility only — not a separate counselling practice offering on this site.
+- SPED / counselling background is credibility only, not a separate counselling practice offering on this site.

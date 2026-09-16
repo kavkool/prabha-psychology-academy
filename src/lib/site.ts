@@ -39,7 +39,7 @@ Anything I should know:
 
 Thank you.`;
 
-/** @deprecated Use trialMailto — kept as alias for older imports */
+/** @deprecated Use trialMailto; kept as alias for older imports */
 export const CONSULTATION_SUBJECT = TRIAL_SUBJECT;
 export const CONSULTATION_BODY = TRIAL_BODY;
 

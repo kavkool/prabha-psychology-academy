@@ -1,4 +1,4 @@
-const SESSIONS = ["October / November", "March — India", "May / June"];
+const SESSIONS = ["October / November", "March (India)", "May / June"];
 
 export function ExamSessions() {
   return (

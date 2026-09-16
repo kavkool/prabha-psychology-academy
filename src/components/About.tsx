@@ -56,13 +56,13 @@ export function About() {
           <div className="mt-5 space-y-3 text-sm leading-relaxed text-ink-muted sm:text-base">
             <p>
               Prabhadevi Malarkannan is a Cambridge A-Level Psychology Examiner,
-              school counselor, and psychotherapist with 17+ years of teaching —
+              school counselor, and psychotherapist with 17+ years of teaching,
               including Psychology and counseling at Nairobi International School
-              (2016–2023).
+              (2016-2023).
             </p>
             <p>
               She coaches Cambridge IGCSE/GCSE, A Level 9990, and AQA with
-              examiner-style feedback — and one clear aim beyond the paper:
+              examiner-style feedback, and one clear aim beyond the paper:
               psychology you can apply to understand yourself and others.
             </p>
           </div>

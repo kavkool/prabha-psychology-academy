@@ -2,12 +2,12 @@ const STEPS = [
   {
     n: "01",
     title: "Free trial",
-    body: "20 minutes to map syllabus, goals, and fit — no pressure.",
+    body: "20 minutes to map syllabus, goals, and fit. No pressure.",
   },
   {
     n: "02",
     title: "Choose a pathway",
-    body: "AS, A Level, fast-track, or 1:1 — matched to your exam date.",
+    body: "AS, A Level, fast-track, or 1:1, matched to your exam date.",
   },
   {
     n: "03",

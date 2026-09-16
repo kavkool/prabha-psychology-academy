@@ -14,7 +14,7 @@ const PACKAGES = [
   },
   {
     name: "A Level course",
-    blurb: "Full pathway for Cambridge 9990 or AQA — content, evaluation, papers.",
+    blurb: "Full pathway for Cambridge 9990 or AQA: content, evaluation, papers.",
     includes: [
       "Full-course syllabus map",
       "Weekly coaching + written feedback",
@@ -36,7 +36,7 @@ const PACKAGES = [
   },
   {
     name: "Optional 1:1",
-    blurb: "Single lessons or a weekly slot — flexible support.",
+    blurb: "Single lessons or a weekly slot: flexible support.",
     includes: [
       "One-off or reserved weekly",
       "Examiner-style writing feedback",
@@ -63,7 +63,7 @@ export function Packages() {
             id="packages-heading"
             className="mt-2 font-display text-2xl font-semibold tracking-tight text-navy sm:text-3xl"
           >
-            Pathways — enquire for details
+            Pathways: enquire for details
           </h2>
           <p className="mt-3 text-sm text-ink-muted">
             Pricing shared on enquiry.{" "}

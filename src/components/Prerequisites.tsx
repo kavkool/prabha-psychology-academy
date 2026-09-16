@@ -18,7 +18,7 @@ export function Prerequisites() {
             <strong className="font-semibold text-navy">
               Private candidates welcome
             </strong>{" "}
-            — syllabus mapping, exam technique, and guidance around Cambridge
+            : syllabus mapping, exam technique, and guidance around Cambridge
             sessions.
           </p>
         </div>
