@@ -42,6 +42,8 @@ const WAYS_TO_LEARN = [
       "Pre-exam mocks",
     ],
     flagship: false,
+    ctaLabel: "After free trial",
+    ctaHref: "trial",
   },
   {
     name: "A Level course",
@@ -54,6 +56,8 @@ const WAYS_TO_LEARN = [
       "Mocks & exam-week plan",
     ],
     flagship: true,
+    ctaLabel: "After free trial",
+    ctaHref: "trial",
   },
   {
     name: "Fast-track",
@@ -66,6 +70,8 @@ const WAYS_TO_LEARN = [
       "Targeted mocks",
     ],
     flagship: false,
+    ctaLabel: "After free trial",
+    ctaHref: "trial",
   },
   {
     name: "Single lessons",
@@ -75,9 +81,11 @@ const WAYS_TO_LEARN = [
       "One-off or reserved weekly",
       "Examiner-style writing feedback",
       "Study plan between sessions",
-      "Free 20-minute trial to start",
+      "Book anytime — no package needed",
     ],
     flagship: false,
+    ctaLabel: "Book instantly",
+    ctaHref: "paid",
   },
 ];
 
@@ -100,10 +108,10 @@ export function Programs() {
             What we offer
           </h2>
           <p className="mt-3 text-sm text-ink-muted">
-            Exam-board coaching and flexible ways to learn. Custom scope:
-            details on enquiry.{" "}
+            Exam-board coaching and flexible ways to learn.{" "}
             <span className="font-semibold text-navy">
-              Start with a free trial, or book a paid lesson from $45.
+              Start with a free trial to plan a course, or book a paid single
+              lesson from $45.
             </span>
           </p>
         </div>
@@ -143,8 +151,11 @@ export function Programs() {
           <h3 className="text-center text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-teal">
             Ways to learn
           </h3>
-          <p className="mt-2 text-center text-xs font-semibold uppercase tracking-[0.12em] text-ink-muted">
-            USD pricing · Custom scope on enquiry
+          <p className="mt-2 text-center text-sm text-ink-muted">
+            Start with a free trial. Course packages are set up after we talk.
+          </p>
+          <p className="mt-1 text-center text-xs font-semibold uppercase tracking-[0.12em] text-ink-muted">
+            USD pricing
           </p>
           <div className="mt-6 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {WAYS_TO_LEARN.map((item) => (
@@ -180,12 +191,29 @@ export function Programs() {
                     </li>
                   ))}
                 </ul>
+                <a
+                  href={
+                    item.ctaHref === "paid" ? PAID_BOOKING_URL : BOOKING_URL
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`mt-5 inline-flex items-center justify-center rounded-full px-4 py-2.5 text-center text-sm font-semibold transition-colors ${
+                    item.ctaHref === "paid"
+                      ? "border border-navy/30 text-navy hover:border-navy hover:bg-cream"
+                      : "bg-navy text-cream hover:bg-teal"
+                  }`}
+                >
+                  {item.ctaLabel}
+                </a>
               </article>
             ))}
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <p className="mt-8 text-center text-sm text-ink-muted">
+          Free trial to plan a course · Paid lesson for single sessions.
+        </p>
+        <div className="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
             href={BOOKING_URL}
             target="_blank"

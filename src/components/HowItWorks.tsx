@@ -9,7 +9,7 @@ const STEPS = [
   {
     n: "02",
     title: "Choose how to learn",
-    body: "AS, A Level, fast-track, or single lessons, matched to your exam date, or book a paid lesson when ready.",
+    body: "After the trial, Prabha helps you choose and arrange AS, A Level, or Fast-track. Single lessons can be booked anytime.",
   },
   {
     n: "03",
@@ -81,7 +81,10 @@ export function HowItWorks() {
           Single lesson from $45 · course packages listed under Ways to learn
         </p>
 
-        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <p className="mt-8 text-center text-sm text-ink-muted">
+          Free trial to plan a course · Paid lesson for single sessions.
+        </p>
+        <div className="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
             href={BOOKING_URL}
             target="_blank"
