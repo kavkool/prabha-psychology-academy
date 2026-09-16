@@ -2,7 +2,7 @@
   "name": "prabha-psychology-academy",
   "version": "1.0.0",
   "private": true,
-  "description": "Marketing site for Prabha Psychology Academy — Cambridge Psychology exam coaching.",
+  "description": "Marketing site for Prabha Psychology — Cambridge Psychology exam coaching.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

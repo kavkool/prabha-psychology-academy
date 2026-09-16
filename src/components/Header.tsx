@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CONTACT_EMAIL, NAV_LINKS, trialMailto } from "@/lib/site";
+import { CONTACT_EMAIL, NAV_LINKS, SITE_NAME, trialMailto } from "@/lib/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -29,13 +29,8 @@ export function Header() {
               P
             </span>
           </span>
-          <span className="leading-tight">
-            <span className="block font-display text-[1.05rem] font-semibold tracking-tight text-navy">
-              Prabha Psychology
-            </span>
-            <span className="block text-[0.68rem] font-medium uppercase tracking-[0.16em] text-ink-muted">
-              Academy
-            </span>
+          <span className="font-display text-[1.05rem] font-semibold tracking-tight text-navy">
+            {SITE_NAME}
           </span>
         </a>
 

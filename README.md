@@ -1,6 +1,6 @@
-# Prabha Psychology Academy
+# Prabha Psychology
 
-Marketing landing page for **Prabha Psychology Academy**: Cambridge and AQA Psychology coaching with Prabhadevi Malarkannan (Cambridge Psychology Examiner and international Psychology educator).
+Marketing landing page for **Prabha Psychology**: Cambridge and AQA Psychology coaching with Prabhadevi Malarkannan (Cambridge Psychology Examiner and international Psychology educator).
 
 Built with Next.js (App Router), TypeScript, and Tailwind CSS.
 

@@ -1,4 +1,4 @@
-export const SITE_NAME = "Prabha Psychology Academy";
+export const SITE_NAME = "Prabha Psychology";
 export const EDUCATOR_NAME = "Prabhadevi Malarkannan";
 export const EDUCATOR_SHORT = "Prabha";
 export const POSITIONING =
@@ -20,7 +20,7 @@ export const PREPLY_RATING = 4.67;
 export const YEARS_EXPERIENCE = 17;
 
 export const SEO_TITLE =
-  "Prabha Psychology Academy | Cambridge & AQA Psychology Coaching";
+  "Prabha Psychology | Cambridge & AQA Psychology Coaching";
 export const SEO_DESCRIPTION =
   "Cambridge Psychology Examiner Prabhadevi Malarkannan coaches Cambridge IGCSE/GCSE, Cambridge A Level (9990), and AQA Psychology. Free trial. Private candidates welcome.";
 
