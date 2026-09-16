@@ -33,6 +33,7 @@ const EXAMS = [
 const WAYS_TO_LEARN = [
   {
     name: "AS Level course",
+    price: "From $449 · 12 lessons",
     blurb: "Structured course from first principles to exam-ready writing.",
     includes: [
       "Syllabus map & pacing",
@@ -40,9 +41,11 @@ const WAYS_TO_LEARN = [
       "Essay / short-answer feedback",
       "Pre-exam mocks",
     ],
+    flagship: false,
   },
   {
     name: "A Level course",
+    price: "From $699 · 20 lessons",
     blurb: "Full course for Cambridge 9990 or AQA: content, evaluation, papers.",
     includes: [
       "Full-course syllabus map",
@@ -50,9 +53,11 @@ const WAYS_TO_LEARN = [
       "Paper technique across your set",
       "Mocks & exam-week plan",
     ],
+    flagship: true,
   },
   {
     name: "Fast-track",
+    price: "From $499 · 10 intensive lessons",
     blurb: "Accelerated coverage when your exam date is close.",
     includes: [
       "Condensed syllabus plan",
@@ -60,9 +65,11 @@ const WAYS_TO_LEARN = [
       "Priority mark-earning skills",
       "Targeted mocks",
     ],
+    flagship: false,
   },
   {
     name: "Optional 1:1",
+    price: "From $45 / lesson",
     blurb: "Single lessons or a weekly slot: flexible support.",
     includes: [
       "One-off or reserved weekly",
@@ -70,6 +77,7 @@ const WAYS_TO_LEARN = [
       "Study plan between sessions",
       "Free 20-minute trial to start",
     ],
+    flagship: false,
   },
 ];
 
@@ -92,9 +100,10 @@ export function Programs() {
             What we offer
           </h2>
           <p className="mt-3 text-sm text-ink-muted">
-            Exam-board coaching and flexible ways to learn. Pricing on enquiry.{" "}
+            Exam-board coaching and flexible ways to learn. Custom scope:
+            details on enquiry.{" "}
             <span className="font-semibold text-navy">
-              Start with a free trial, or book a paid lesson.
+              Start with a free trial, or book a paid lesson from $45.
             </span>
           </p>
         </div>
@@ -135,19 +144,28 @@ export function Programs() {
             Ways to learn
           </h3>
           <p className="mt-2 text-center text-xs font-semibold uppercase tracking-[0.12em] text-ink-muted">
-            Details on enquiry
+            USD pricing · Custom scope on enquiry
           </p>
           <div className="mt-6 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {WAYS_TO_LEARN.map((item) => (
               <article
                 key={item.name}
-                className="flex flex-col rounded-2xl border border-navy/10 bg-cream-paper p-5 text-navy shadow-card sm:p-6"
+                className={`relative flex flex-col rounded-2xl border bg-cream-paper p-5 text-navy shadow-card sm:p-6 ${
+                  item.flagship
+                    ? "border-gold/60 ring-1 ring-gold/40"
+                    : "border-navy/10"
+                }`}
               >
+                {item.flagship ? (
+                  <p className="absolute -top-2.5 left-4 rounded-full bg-gold px-2.5 py-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-navy">
+                    Flagship
+                  </p>
+                ) : null}
                 <h4 className="font-display text-lg font-semibold text-navy">
                   {item.name}
                 </h4>
                 <p className="mt-1 text-xs font-semibold uppercase tracking-[0.12em] text-teal">
-                  Enquire for details
+                  {item.price}
                 </p>
                 <p className="mt-3 text-sm leading-snug text-ink-muted">
                   {item.blurb}

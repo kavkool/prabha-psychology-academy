@@ -19,7 +19,7 @@ const STEPS = [
 ];
 
 const LOGISTICS = [
-  { label: "Free trial", value: "20-minute intro booking" },
+  { label: "Free trial", value: "20-minute intro · Free" },
   { label: "Platform", value: "Google Meet" },
   { label: "Schedule", value: "Single lesson or weekly slot" },
   { label: "Time zones", value: "Booked in your local time" },
@@ -77,6 +77,9 @@ export function HowItWorks() {
             </div>
           ))}
         </div>
+        <p className="mt-3 text-center text-xs text-ink-muted">
+          Single lesson from $45 · course packages listed under Ways to learn
+        </p>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
