@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import { Fraunces, Source_Sans_3 } from "next/font/google";
+import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
 import { SEO_DESCRIPTION, SEO_TITLE, SITE_NAME } from "@/lib/site";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
-  variable: "--font-fraunces",
+  variable: "--font-display",
   display: "swap",
-  axes: ["SOFT", "opsz"],
 });
 
 const sourceSans = Source_Sans_3({
@@ -60,7 +59,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${sourceSans.variable}`}>
+    <html lang="en" className={`${sourceSerif.variable} ${sourceSans.variable}`}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );

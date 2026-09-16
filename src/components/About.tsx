@@ -4,10 +4,10 @@ import { EDUCATOR_NAME } from "@/lib/site";
 const CREDENTIALS = [
   "Cambridge A-Level Psychology Examiner",
   "17+ years teaching experience",
-  "School Counselor & Psychotherapist",
-  "M.A. Counselling & Psychotherapy",
-  "M.Sc. Rehabilitation Science",
+  "Psychology teacher, Nairobi International School (2016–2023)",
+  "M.A. Counselling & Psychotherapy · M.Sc. Rehabilitation Science",
   "B.Ed. · Tamil Nadu Open University",
+  "School counselor & psychotherapist",
 ];
 
 export function About() {
@@ -45,25 +45,28 @@ export function About() {
 
         <div className="lg:col-span-7">
           <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-teal">
-            About Prabha
+            About
           </p>
           <h2
             id="about-heading"
             className="mt-2 font-display text-2xl font-semibold text-navy sm:text-3xl"
           >
-            Examiner insight. Student-centered coaching.
+            Hi, I&apos;m Prabha
           </h2>
           <div className="mt-5 space-y-3 text-sm leading-relaxed text-ink-muted sm:text-base">
             <p>
-              Prabhadevi Malarkannan is a Cambridge A-Level Psychology Examiner,
-              school counselor, and psychotherapist with 17+ years of teaching,
-              including Psychology and counseling at Nairobi International School
-              (2016-2023).
+              I&apos;m a Cambridge A-Level Psychology Examiner with 17+ years of
+              teaching. From 2016 to 2023 I taught Psychology and counseling at
+              Nairobi International School. I hold dual master&apos;s degrees and
+              a B.Ed., and I work as a school counselor and psychotherapist
+              alongside coaching.
             </p>
             <p>
-              She coaches Cambridge IGCSE/GCSE, A Level 9990, and AQA with
-              examiner-style feedback, and one clear aim beyond the paper:
-              psychology you can apply to understand yourself and others.
+              I coach Cambridge IGCSE/GCSE, A Level 9990, and AQA with the same
+              care I bring to marking: clear technique, honest feedback, and a
+              student-centered pace. My aim is simple — help you do well in the
+              exam and leave with a real understanding of psychology, not just
+              notes.
             </p>
           </div>
 

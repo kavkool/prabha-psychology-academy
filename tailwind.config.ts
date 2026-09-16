@@ -39,7 +39,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ["var(--font-fraunces)", "Georgia", "serif"],
+        display: ["var(--font-display)", "Georgia", "serif"],
         sans: ["var(--font-source-sans)", "system-ui", "sans-serif"],
       },
       boxShadow: {
