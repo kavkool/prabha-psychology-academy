@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL, trialMailto } from "@/lib/site";
+import { BOOKING_URL } from "@/lib/site";
 
 export function Hero() {
   return (
@@ -31,7 +31,9 @@ export function Hero() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center lg:justify-start justify-center">
             <a
-              href={trialMailto(CONTACT_EMAIL)}
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-gold px-6 py-3.5 text-center text-sm font-semibold text-navy-deep shadow-lg shadow-navy-deep/20 transition-transform hover:-translate-y-0.5 hover:bg-gold-soft"
             >
               Book a free trial lesson

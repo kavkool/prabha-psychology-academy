@@ -27,30 +27,38 @@ npm start
 | Item | Where |
 | --- | --- |
 | Contact email | `.env.local` → `NEXT_PUBLIC_CONTACT_EMAIL` (falls back to `CONTACT_EMAIL`, then `prabha.malarkannan@gmail.com`) |
+| Booking URL | `.env.local` → `NEXT_PUBLIC_BOOKING_URL` (falls back to `BOOKING_URL`, then Google Calendar appointment link) |
 | Instagram | `.env.local` → `NEXT_PUBLIC_INSTAGRAM_URL` and `INSTAGRAM_HANDLE` in `src/lib/site.ts` |
-| Free trial mailto copy | `src/lib/site.ts` (`TRIAL_SUBJECT`, `TRIAL_BODY`) |
+| Free trial mailto copy | `src/lib/site.ts` (`TRIAL_SUBJECT`, `TRIAL_BODY`) — used for secondary email-support links only |
 | Testimonials | `src/components/Testimonials.tsx` |
 | Courses / packages | `src/components/Packages.tsx` |
 | About copy | `src/components/About.tsx` |
 | How it works + logistics | `src/components/HowItWorks.tsx` |
 | Cambridge exam sessions | `src/components/ExamSessions.tsx` |
 
-Contact email is `prabha.malarkannan@gmail.com`. Instagram `@prabhapsychology` is a placeholder until the real profile is live.
+### Booking
+
+Primary CTAs (Header, Hero, Packages, Final CTA, How it works) open the **Google Calendar appointment** link in a new tab:
+
+`https://calendar.app.google/wDt5SsP83a1bCemX9`
+
+Override with `NEXT_PUBLIC_BOOKING_URL` / `BOOKING_URL` in `.env.local` or Vercel env vars.
+
+Contact email `prabha.malarkannan@gmail.com` remains for secondary “message us” / support mailto links (Footer, Final CTA). Instagram `@prabhapsychology` is a placeholder until the real profile is live.
 
 ## Not built yet (intentional placeholders)
 
-- Real calendar / scheduling UI
 - Real payment checkout
 - Live chat widget
 - Dynamic timezone converter
 
-Booking is mailto-based; payment details are shared when students book.
+Trial booking is via Google Calendar appointments; payment details are shared when students book.
 
 ## Deploy (Vercel)
 
 1. Push this folder to GitHub.
 2. Import the repo in Vercel (https://vercel.com).
-3. Set `NEXT_PUBLIC_CONTACT_EMAIL` (and optional `NEXT_PUBLIC_INSTAGRAM_URL`) in project environment variables.
+3. Set `NEXT_PUBLIC_CONTACT_EMAIL`, `NEXT_PUBLIC_BOOKING_URL` (optional if using the default Calendar link), and optional `NEXT_PUBLIC_INSTAGRAM_URL` in project environment variables.
 4. Deploy. Framework preset: Next.js.
 
 ## Brand notes

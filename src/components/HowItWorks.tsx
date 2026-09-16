@@ -1,8 +1,10 @@
+import { BOOKING_URL } from "@/lib/site";
+
 const STEPS = [
   {
     n: "01",
     title: "Free trial",
-    body: "20 minutes to map syllabus, goals, and fit. No pressure.",
+    body: "Book 20 minutes on Google Calendar to map syllabus, goals, and fit. No pressure.",
   },
   {
     n: "02",
@@ -17,6 +19,7 @@ const STEPS = [
 ];
 
 const LOGISTICS = [
+  { label: "Booking", value: "Google Calendar appointment" },
   { label: "Platforms", value: "Meet · Zoom · Teams" },
   { label: "Schedule", value: "Single lesson or weekly slot" },
   { label: "Time zones", value: "Booked in your local time" },
@@ -62,7 +65,7 @@ export function HowItWorks() {
           ))}
         </ol>
 
-        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
           {LOGISTICS.map((item) => (
             <div
               key={item.label}
@@ -77,7 +80,16 @@ export function HowItWorks() {
         </div>
 
         <p className="mt-5 text-center text-sm text-ink-muted">
-          Bookings are coordinated via Google Calendar on the contact email.
+          Book your free trial on{" "}
+          <a
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-teal underline-offset-2 hover:underline"
+          >
+            Google Calendar
+          </a>
+          . Payment details are shared after you book.
         </p>
       </div>
     </section>

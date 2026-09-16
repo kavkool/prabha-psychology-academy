@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL, trialMailto } from "@/lib/site";
+import { BOOKING_URL } from "@/lib/site";
 
 const PACKAGES = [
   {
@@ -121,7 +121,9 @@ export function Packages() {
 
         <div className="mt-8 text-center">
           <a
-            href={trialMailto(CONTACT_EMAIL)}
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-navy px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-teal"
           >
             Book a free trial lesson

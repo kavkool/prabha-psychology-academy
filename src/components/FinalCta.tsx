@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL, PREPLY_URL, trialMailto } from "@/lib/site";
+import { BOOKING_URL, CONTACT_EMAIL, PREPLY_URL } from "@/lib/site";
 
 export function FinalCta() {
   return (
@@ -16,16 +16,26 @@ export function FinalCta() {
           Book a free 20-minute trial lesson
         </h2>
         <p className="mx-auto mt-3 max-w-md text-sm text-cream/75">
-          Share your syllabus, private-candidate status, and time zone. We&apos;ll
-          take it from there.
+          Pick a time on Google Calendar. Share your syllabus, private-candidate
+          status, and time zone when you book.
         </p>
         <a
-          href={trialMailto(CONTACT_EMAIL)}
+          href={BOOKING_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-7 inline-flex items-center justify-center rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-navy-deep transition-transform hover:-translate-y-0.5 hover:bg-gold-soft"
         >
-          Email to book your free trial
+          Book a free trial lesson
         </a>
-        <p className="mt-3 text-sm text-cream/55">{CONTACT_EMAIL}</p>
+        <p className="mt-4 text-sm text-cream/55">
+          Prefer to message us?{" "}
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="text-gold-soft underline-offset-2 hover:underline"
+          >
+            {CONTACT_EMAIL}
+          </a>
+        </p>
         <p className="mt-5 text-xs text-cream/45">
           Also on{" "}
           <a

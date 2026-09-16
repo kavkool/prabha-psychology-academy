@@ -9,6 +9,12 @@ export const CONTACT_EMAIL =
   process.env.CONTACT_EMAIL ||
   "prabha.malarkannan@gmail.com";
 
+/** Google Calendar appointment scheduling link for free trial lessons */
+export const BOOKING_URL =
+  process.env.NEXT_PUBLIC_BOOKING_URL ||
+  process.env.BOOKING_URL ||
+  "https://calendar.app.google/wDt5SsP83a1bCemX9";
+
 export const INSTAGRAM_HANDLE = "@prabhapsychology";
 export const INSTAGRAM_URL =
   process.env.NEXT_PUBLIC_INSTAGRAM_URL ||
@@ -39,10 +45,11 @@ Anything I should know:
 
 Thank you.`;
 
-/** @deprecated Use trialMailto; kept as alias for older imports */
+/** @deprecated Primary booking uses BOOKING_URL; kept for email-support fallbacks */
 export const CONSULTATION_SUBJECT = TRIAL_SUBJECT;
 export const CONSULTATION_BODY = TRIAL_BODY;
 
+/** Mailto for secondary email / message-us links only — not primary trial CTAs */
 export function trialMailto(email: string = CONTACT_EMAIL): string {
   const params = new URLSearchParams({
     subject: TRIAL_SUBJECT,

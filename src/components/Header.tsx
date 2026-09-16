@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CONTACT_EMAIL, NAV_LINKS, SITE_NAME, trialMailto } from "@/lib/site";
+import { BOOKING_URL, NAV_LINKS, SITE_NAME } from "@/lib/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -48,7 +48,9 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <a
-            href={trialMailto(CONTACT_EMAIL)}
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden rounded-full bg-navy px-4 py-2 text-sm font-semibold text-cream transition-colors hover:bg-teal sm:inline-flex"
           >
             Free trial lesson
@@ -91,7 +93,9 @@ export function Header() {
               </a>
             ))}
             <a
-              href={trialMailto(CONTACT_EMAIL)}
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-1 rounded-full bg-navy px-4 py-2.5 text-center text-sm font-semibold text-cream"
               onClick={() => setOpen(false)}
             >
