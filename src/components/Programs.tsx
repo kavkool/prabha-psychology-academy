@@ -68,7 +68,7 @@ const WAYS_TO_LEARN = [
     flagship: false,
   },
   {
-    name: "Optional 1:1",
+    name: "Single lessons",
     price: "From $45 / lesson",
     blurb: "Single lessons or a weekly slot: flexible support.",
     includes: [
