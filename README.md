@@ -26,7 +26,7 @@ npm start
 
 | Item | Where |
 | --- | --- |
-| Contact email | `.env.local` → `NEXT_PUBLIC_CONTACT_EMAIL` (falls back to `CONTACT_EMAIL`, then `hello@prabhapsychology.com`) |
+| Contact email | `.env.local` → `NEXT_PUBLIC_CONTACT_EMAIL` (falls back to `CONTACT_EMAIL`, then `prabha.malarkannan@gmail.com`) |
 | Instagram | `.env.local` → `NEXT_PUBLIC_INSTAGRAM_URL` and `INSTAGRAM_HANDLE` in `src/lib/site.ts` |
 | Free trial mailto copy | `src/lib/site.ts` (`TRIAL_SUBJECT`, `TRIAL_BODY`) |
 | Testimonials | `src/components/Testimonials.tsx` |
@@ -35,7 +35,7 @@ npm start
 | How it works + logistics | `src/components/HowItWorks.tsx` |
 | Cambridge exam sessions | `src/components/ExamSessions.tsx` |
 
-`hello@prabhapsychology.com` and Instagram `@prabhapsychology` are placeholders until real inboxes and profiles are live.
+Contact email is `prabha.malarkannan@gmail.com`. Instagram `@prabhapsychology` is a placeholder until the real profile is live.
 
 ## Not built yet (intentional placeholders)
 

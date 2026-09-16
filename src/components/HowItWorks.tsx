@@ -75,6 +75,10 @@ export function HowItWorks() {
             </div>
           ))}
         </div>
+
+        <p className="mt-5 text-center text-sm text-ink-muted">
+          Bookings are coordinated via Google Calendar on the contact email.
+        </p>
       </div>
     </section>
   );

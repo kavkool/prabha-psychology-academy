@@ -7,7 +7,7 @@ export const POSITIONING =
 export const CONTACT_EMAIL =
   process.env.NEXT_PUBLIC_CONTACT_EMAIL ||
   process.env.CONTACT_EMAIL ||
-  "hello@prabhapsychology.com";
+  "prabha.malarkannan@gmail.com";
 
 export const INSTAGRAM_HANDLE = "@prabhapsychology";
 export const INSTAGRAM_URL =
