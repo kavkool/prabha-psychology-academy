@@ -20,7 +20,7 @@ export function Hero() {
             id="hero-heading"
             className="font-display text-3xl font-semibold leading-[1.15] tracking-tight text-balance sm:text-4xl lg:text-[2.75rem]"
           >
-            Psychology coaching that earns marks, and clarifies life.
+            Exam-ready Psychology coaching, grounded in real understanding.
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-cream/80 sm:text-lg lg:mx-0 mx-auto">
             Cambridge IGCSE/GCSE, A Level 9990 &amp; AQA: examiner-style
