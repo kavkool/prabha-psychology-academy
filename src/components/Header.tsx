@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { BOOKING_URL, NAV_LINKS, SITE_NAME } from "@/lib/site";
+import { BOOKING_URL, NAV_LINKS, PAID_BOOKING_URL, SITE_NAME } from "@/lib/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -51,9 +51,17 @@ export function Header() {
             href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-full bg-navy px-4 py-2 text-sm font-semibold text-cream transition-colors hover:bg-teal sm:inline-flex"
+            className="hidden rounded-full bg-navy px-4 py-2 text-sm font-semibold text-cream transition-colors hover:bg-teal lg:inline-flex"
           >
-            Free trial lesson
+            Free trial
+          </a>
+          <a
+            href={PAID_BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden rounded-full border border-navy/25 px-4 py-2 text-sm font-semibold text-navy transition-colors hover:border-navy hover:bg-cream-warm xl:inline-flex"
+          >
+            Book a paid lesson
           </a>
           <button
             type="button"
@@ -99,7 +107,16 @@ export function Header() {
               className="mt-1 rounded-full bg-navy px-4 py-2.5 text-center text-sm font-semibold text-cream"
               onClick={() => setOpen(false)}
             >
-              Book a free trial lesson
+              Book a free trial
+            </a>
+            <a
+              href={PAID_BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-navy/25 px-4 py-2.5 text-center text-sm font-semibold text-navy"
+              onClick={() => setOpen(false)}
+            >
+              Book a paid lesson
             </a>
           </nav>
         </div>

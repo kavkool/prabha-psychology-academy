@@ -1,4 +1,4 @@
-import { BOOKING_URL } from "@/lib/site";
+import { BOOKING_URL, PAID_BOOKING_URL } from "@/lib/site";
 
 const PACKAGES = [
   {
@@ -67,7 +67,9 @@ export function Packages() {
           </h2>
           <p className="mt-3 text-sm text-ink-muted">
             Pricing shared on enquiry.{" "}
-            <span className="font-semibold text-navy">Trial lessons are free.</span>
+            <span className="font-semibold text-navy">
+              Start with a free trial, or book a paid lesson.
+            </span>
           </p>
         </div>
 
@@ -119,14 +121,22 @@ export function Packages() {
           ))}
         </div>
 
-        <div className="mt-8 text-center">
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
             href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-navy px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-teal"
           >
-            Book a free trial lesson
+            Book a free trial
+          </a>
+          <a
+            href={PAID_BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full border border-navy/30 px-6 py-3 text-sm font-semibold text-navy transition-colors hover:border-navy hover:bg-cream"
+          >
+            Book a paid lesson
           </a>
         </div>
       </div>

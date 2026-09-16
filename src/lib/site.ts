@@ -15,6 +15,12 @@ export const BOOKING_URL =
   process.env.BOOKING_URL ||
   "https://calendar.app.google/wDt5SsP83a1bCemX9";
 
+/** Calendly link for paid lessons */
+export const PAID_BOOKING_URL =
+  process.env.NEXT_PUBLIC_PAID_BOOKING_URL ||
+  process.env.PAID_BOOKING_URL ||
+  "https://calendly.com/prabha-malarkannan/lesson";
+
 export const INSTAGRAM_HANDLE = "@prabhapsychology";
 export const INSTAGRAM_URL =
   process.env.NEXT_PUBLIC_INSTAGRAM_URL ||

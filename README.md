@@ -27,7 +27,8 @@ npm start
 | Item | Where |
 | --- | --- |
 | Contact email | `.env.local` → `NEXT_PUBLIC_CONTACT_EMAIL` (falls back to `CONTACT_EMAIL`, then `prabha.malarkannan@gmail.com`) |
-| Booking URL | `.env.local` → `NEXT_PUBLIC_BOOKING_URL` (falls back to `BOOKING_URL`, then Google Calendar appointment link) |
+| Free trial booking URL | `.env.local` → `NEXT_PUBLIC_BOOKING_URL` (falls back to `BOOKING_URL`, then Google Calendar appointment link) |
+| Paid lesson booking URL | `.env.local` → `NEXT_PUBLIC_PAID_BOOKING_URL` (falls back to `PAID_BOOKING_URL`, then Calendly lesson link) |
 | Instagram | `.env.local` → `NEXT_PUBLIC_INSTAGRAM_URL` and `INSTAGRAM_HANDLE` in `src/lib/site.ts` |
 | Free trial mailto copy | `src/lib/site.ts` (`TRIAL_SUBJECT`, `TRIAL_BODY`) — used for secondary email-support links only |
 | Testimonials | `src/components/Testimonials.tsx` |
@@ -38,11 +39,17 @@ npm start
 
 ### Booking
 
-Primary CTAs (Header, Hero, Packages, Final CTA, How it works) open the **Google Calendar appointment** link in a new tab:
+Primary CTAs (Header, Hero, Packages, Final CTA, How it works) offer two clear options:
 
-`https://calendar.app.google/wDt5SsP83a1bCemX9`
+1. **Free trial** (gold / primary) — Google Calendar appointment  
+   `https://calendar.app.google/wDt5SsP83a1bCemX9`  
+   Override with `NEXT_PUBLIC_BOOKING_URL` / `BOOKING_URL`.
 
-Override with `NEXT_PUBLIC_BOOKING_URL` / `BOOKING_URL` in `.env.local` or Vercel env vars.
+2. **Paid lesson** (navy / outline secondary) — Calendly  
+   `https://calendly.com/prabha-malarkannan/lesson`  
+   Override with `NEXT_PUBLIC_PAID_BOOKING_URL` / `PAID_BOOKING_URL`.
+
+Both open in a new tab with `rel="noopener noreferrer"`.
 
 Contact email `prabha.malarkannan@gmail.com` remains for secondary “message us” / support mailto links (Footer, Final CTA). Instagram `@prabhapsychology` is a placeholder until the real profile is live.
 
@@ -52,13 +59,13 @@ Contact email `prabha.malarkannan@gmail.com` remains for secondary “message us
 - Live chat widget
 - Dynamic timezone converter
 
-Trial booking is via Google Calendar appointments; payment details are shared when students book.
+Trial booking is via Google Calendar; paid lessons via Calendly. Course pricing details are shared on enquiry.
 
 ## Deploy (Vercel)
 
 1. Push this folder to GitHub.
 2. Import the repo in Vercel (https://vercel.com).
-3. Set `NEXT_PUBLIC_CONTACT_EMAIL`, `NEXT_PUBLIC_BOOKING_URL` (optional if using the default Calendar link), and optional `NEXT_PUBLIC_INSTAGRAM_URL` in project environment variables.
+3. Set `NEXT_PUBLIC_CONTACT_EMAIL`, optional `NEXT_PUBLIC_BOOKING_URL`, optional `NEXT_PUBLIC_PAID_BOOKING_URL`, and optional `NEXT_PUBLIC_INSTAGRAM_URL` in project environment variables.
 4. Deploy. Framework preset: Next.js.
 
 ## Brand notes

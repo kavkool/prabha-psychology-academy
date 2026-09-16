@@ -1,4 +1,4 @@
-import { BOOKING_URL } from "@/lib/site";
+import { BOOKING_URL, PAID_BOOKING_URL } from "@/lib/site";
 
 const STEPS = [
   {
@@ -9,7 +9,7 @@ const STEPS = [
   {
     n: "02",
     title: "Choose a pathway",
-    body: "AS, A Level, fast-track, or 1:1, matched to your exam date.",
+    body: "AS, A Level, fast-track, or 1:1, matched to your exam date — or book a paid lesson when ready.",
   },
   {
     n: "03",
@@ -19,11 +19,11 @@ const STEPS = [
 ];
 
 const LOGISTICS = [
-  { label: "Booking", value: "Google Calendar appointment" },
+  { label: "Free trial", value: "Google Calendar appointment" },
+  { label: "Paid lesson", value: "Calendly booking" },
   { label: "Platforms", value: "Meet · Zoom · Teams" },
   { label: "Schedule", value: "Single lesson or weekly slot" },
   { label: "Time zones", value: "Booked in your local time" },
-  { label: "Payment", value: "Details shared after booking" },
 ];
 
 export function HowItWorks() {
@@ -79,8 +79,26 @@ export function HowItWorks() {
           ))}
         </div>
 
-        <p className="mt-5 text-center text-sm text-ink-muted">
-          Book your free trial on{" "}
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full bg-navy px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-teal"
+          >
+            Book a free trial
+          </a>
+          <a
+            href={PAID_BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full border border-navy/30 px-6 py-3 text-sm font-semibold text-navy transition-colors hover:border-navy hover:bg-cream-warm"
+          >
+            Book a paid lesson
+          </a>
+        </div>
+        <p className="mt-4 text-center text-sm text-ink-muted">
+          Free trial via{" "}
           <a
             href={BOOKING_URL}
             target="_blank"
@@ -89,7 +107,16 @@ export function HowItWorks() {
           >
             Google Calendar
           </a>
-          . Payment details are shared after you book.
+          ; paid lessons via{" "}
+          <a
+            href={PAID_BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-teal underline-offset-2 hover:underline"
+          >
+            Calendly
+          </a>
+          .
         </p>
       </div>
     </section>

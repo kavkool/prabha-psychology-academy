@@ -1,4 +1,4 @@
-import { BOOKING_URL } from "@/lib/site";
+import { BOOKING_URL, PAID_BOOKING_URL } from "@/lib/site";
 
 export function Hero() {
   return (
@@ -26,21 +26,30 @@ export function Hero() {
             Cambridge IGCSE/GCSE, A Level 9990 &amp; AQA: examiner-style
             feedback from Prabhadevi Malarkannan.{" "}
             <span className="font-semibold text-gold-soft">
-              Free 20-minute trial.
-            </span>
+              Free 20-minute trial
+            </span>{" "}
+            or book a paid lesson when you are ready.
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center lg:justify-start justify-center">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center lg:justify-start justify-center">
             <a
               href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-gold px-6 py-3.5 text-center text-sm font-semibold text-navy-deep shadow-lg shadow-navy-deep/20 transition-transform hover:-translate-y-0.5 hover:bg-gold-soft"
             >
-              Book a free trial lesson
+              Book a free trial
+            </a>
+            <a
+              href={PAID_BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full border border-cream/35 px-6 py-3.5 text-sm font-semibold text-cream transition-colors hover:border-gold/50 hover:text-gold-soft"
+            >
+              Book a paid lesson
             </a>
             <a
               href="#programs"
-              className="inline-flex items-center justify-center rounded-full border border-cream/25 px-6 py-3.5 text-sm font-semibold text-cream transition-colors hover:border-gold/50 hover:text-gold-soft"
+              className="inline-flex items-center justify-center rounded-full border border-cream/25 px-6 py-3.5 text-sm font-semibold text-cream/80 transition-colors hover:border-cream/50 hover:text-cream"
             >
               View programs
             </a>
