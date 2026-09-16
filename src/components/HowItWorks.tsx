@@ -21,7 +21,7 @@ const STEPS = [
 const LOGISTICS = [
   { label: "Free trial", value: "20-minute intro booking" },
   { label: "Paid lesson", value: "Full lesson booking" },
-  { label: "Platforms", value: "Meet · Zoom · Teams" },
+  { label: "Platforms", value: "Google Meet" },
   { label: "Schedule", value: "Single lesson or weekly slot" },
   { label: "Time zones", value: "Booked in your local time" },
 ];
