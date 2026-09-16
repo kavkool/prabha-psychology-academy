@@ -32,28 +32,10 @@ npm start
 | Testimonials | `src/components/Testimonials.tsx` |
 | Courses / packages | `src/components/Packages.tsx` |
 | About copy | `src/components/About.tsx` |
-| Lesson logistics | `src/components/LessonLogistics.tsx` |
+| How it works + logistics | `src/components/HowItWorks.tsx` |
 | Cambridge exam sessions | `src/components/ExamSessions.tsx` |
 
 `hello@prabhapsychology.com` and Instagram `@prabhapsychology` are placeholders until real inboxes and profiles are live.
-
-## Lead magnet wiring
-
-The "10 Mistakes Students Make in Cambridge Psychology 9990 Exams" form is **client-side only**.
-
-Current behaviour:
-
-1. Visitor enters an email and submits.
-2. The browser opens a prefilled `mailto:` to the contact address (or shows a success note if that is blocked).
-3. **No emails are stored** and no newsletter list is created.
-
-To wire this for production, replace the submit handler in `src/components/LeadMagnet.tsx` with one of:
-
-- Formspree or Getform (form POST)
-- A Next.js Route Handler that sends via Resend or Postmark
-- A marketing tool (Mailchimp, ConvertKit, Buttondown) subscribe API
-
-Keep the success message and never store addresses in git.
 
 ## Not built yet (intentional placeholders)
 
@@ -75,6 +57,6 @@ Booking is mailto-based; payment details are shared when students book.
 
 - No fabricated accreditation logos, awards, or student-count claims.
 - Curricula featured: Cambridge IGCSE/GCSE Psychology, Cambridge A Level Psychology (9990), AQA Psychology.
-- Exam-oriented core plus beyond-the-exam value (apply psychology to real life; understand yourself and others; change perspective).
+- Exam-oriented core plus beyond-the-exam value (apply psychology to real life) in a single line of positioning.
 - Private candidates welcome; no prior Psychology knowledge required for A Level.
 - SPED / counselling background is credibility only — not a separate counselling practice offering on this site.

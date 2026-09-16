@@ -4,43 +4,38 @@ export function FinalCta() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-navy py-20 text-cream sm:py-24"
+      className="relative overflow-hidden bg-navy py-14 text-cream sm:py-16"
       aria-labelledby="cta-heading"
     >
       <div className="hero-glow pointer-events-none absolute inset-0" />
-      <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
-        <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-gold-soft">
-          Next step
-        </p>
+      <div className="relative mx-auto max-w-2xl px-4 text-center sm:px-6">
         <h2
           id="cta-heading"
-          className="mt-3 font-display text-3xl font-semibold tracking-tight text-balance sm:text-4xl"
+          className="font-display text-2xl font-semibold tracking-tight text-balance sm:text-3xl"
         >
           Book a free 20-minute trial lesson
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-cream/75">
-          Trial classes are free. Tell Prabha your syllabus, whether you are a
-          private candidate, and your time zone. Leave with a clearer picture of
-          the pathway — and whether coaching is the right next move.
+        <p className="mx-auto mt-3 max-w-md text-sm text-cream/75">
+          Share your syllabus, private-candidate status, and time zone. We&apos;ll
+          take it from there.
         </p>
         <a
           href={trialMailto(CONTACT_EMAIL)}
-          className="mt-8 inline-flex items-center justify-center rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-navy-deep transition-transform hover:-translate-y-0.5 hover:bg-gold-soft"
+          className="mt-7 inline-flex items-center justify-center rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-navy-deep transition-transform hover:-translate-y-0.5 hover:bg-gold-soft"
         >
-          Email to book your free trial lesson
+          Email to book your free trial
         </a>
-        <p className="mt-4 text-sm text-cream/60">{CONTACT_EMAIL}</p>
-        <p className="mt-6 text-sm text-cream/50">
-          Prefer booking via Preply?{" "}
+        <p className="mt-3 text-sm text-cream/55">{CONTACT_EMAIL}</p>
+        <p className="mt-5 text-xs text-cream/45">
+          Also on{" "}
           <a
             href={PREPLY_URL}
             rel="noreferrer"
             target="_blank"
             className="text-gold-soft underline-offset-2 hover:underline"
           >
-            Also available on Preply
+            Preply
           </a>
-          .
         </p>
       </div>
     </section>

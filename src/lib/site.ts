@@ -22,7 +22,7 @@ export const YEARS_EXPERIENCE = 17;
 export const SEO_TITLE =
   "Prabha Psychology Academy | Cambridge & AQA Psychology Coaching";
 export const SEO_DESCRIPTION =
-  "Cambridge Psychology Examiner and international Psychology educator Prabhadevi Malarkannan coaches Cambridge IGCSE/GCSE, Cambridge A Level (9990), and AQA Psychology — exam technique, real-life understanding, and examiner-style feedback. Free trial lessons. Private candidates welcome.";
+  "Cambridge Psychology Examiner Prabhadevi Malarkannan coaches Cambridge IGCSE/GCSE, Cambridge A Level (9990), and AQA Psychology. Free trial. Private candidates welcome.";
 
 export const TRIAL_SUBJECT = "Free 20-minute trial lesson";
 
@@ -55,21 +55,10 @@ export function consultationMailto(email: string = CONTACT_EMAIL): string {
   return trialMailto(email);
 }
 
-export function leadMagnetMailto(
-  senderEmail: string,
-  email: string = CONTACT_EMAIL,
-): string {
-  const params = new URLSearchParams({
-    subject: "Guide request: 10 Mistakes Students Make in Cambridge Psychology 9990 Exams",
-    body: `Please send me the free guide: 10 Mistakes Students Make in Cambridge Psychology 9990 Exams.\n\nMy email: ${senderEmail}`,
-  });
-  return `mailto:${email}?${params.toString()}`;
-}
-
 export const NAV_LINKS = [
   { href: "#programs", label: "Programs" },
   { href: "#packages", label: "Courses" },
-  { href: "#lessons", label: "How lessons work" },
+  { href: "#how-it-works", label: "How it works" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ] as const;
