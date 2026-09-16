@@ -20,8 +20,7 @@ const STEPS = [
 
 const LOGISTICS = [
   { label: "Free trial", value: "20-minute intro booking" },
-  { label: "Paid lesson", value: "Full lesson booking" },
-  { label: "Platforms", value: "Google Meet" },
+  { label: "Platform", value: "Google Meet" },
   { label: "Schedule", value: "Single lesson or weekly slot" },
   { label: "Time zones", value: "Booked in your local time" },
 ];
@@ -65,7 +64,7 @@ export function HowItWorks() {
           ))}
         </ol>
 
-        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {LOGISTICS.map((item) => (
             <div
               key={item.label}
