@@ -29,7 +29,6 @@ npm start
 | Contact email | `.env.local` → `NEXT_PUBLIC_CONTACT_EMAIL` (falls back to `CONTACT_EMAIL`, then `prabha.malarkannan@gmail.com`) |
 | Free trial booking URL | `.env.local` → `NEXT_PUBLIC_BOOKING_URL` (falls back to `BOOKING_URL`, then Google Calendar appointment link) |
 | Paid lesson booking URL | `.env.local` → `NEXT_PUBLIC_PAID_BOOKING_URL` (falls back to `PAID_BOOKING_URL`, then Calendly lesson link) |
-| Instagram | `.env.local` → `NEXT_PUBLIC_INSTAGRAM_URL` and `INSTAGRAM_HANDLE` in `src/lib/site.ts` |
 | Free trial mailto copy | `src/lib/site.ts` (`TRIAL_SUBJECT`, `TRIAL_BODY`) — used for secondary email-support links only |
 | Testimonials | `src/components/Testimonials.tsx` |
 | Courses / packages | `src/components/Packages.tsx` |
@@ -51,7 +50,7 @@ Primary CTAs (Header, Hero, Packages, Final CTA, How it works) offer two clear o
 
 Both open in a new tab with `rel="noopener noreferrer"`.
 
-Contact email `prabha.malarkannan@gmail.com` remains for secondary “message us” / support mailto links (Footer, Final CTA). Instagram `@prabhapsychology` is a placeholder until the real profile is live.
+Contact email `prabha.malarkannan@gmail.com` remains for secondary “message us” / support mailto links (Footer, Final CTA).
 
 ## Not built yet (intentional placeholders)
 
@@ -65,7 +64,7 @@ Trial booking is via Google Calendar; paid lessons via Calendly. Course pricing 
 
 1. Push this folder to GitHub.
 2. Import the repo in Vercel (https://vercel.com).
-3. Set `NEXT_PUBLIC_CONTACT_EMAIL`, optional `NEXT_PUBLIC_BOOKING_URL`, optional `NEXT_PUBLIC_PAID_BOOKING_URL`, and optional `NEXT_PUBLIC_INSTAGRAM_URL` in project environment variables.
+3. Set `NEXT_PUBLIC_CONTACT_EMAIL`, optional `NEXT_PUBLIC_BOOKING_URL`, and optional `NEXT_PUBLIC_PAID_BOOKING_URL` in project environment variables.
 4. Deploy. Framework preset: Next.js.
 
 ## Brand notes

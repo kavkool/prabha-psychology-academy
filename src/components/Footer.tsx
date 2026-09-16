@@ -1,7 +1,5 @@
 import {
   CONTACT_EMAIL,
-  INSTAGRAM_HANDLE,
-  INSTAGRAM_URL,
   PREPLY_URL,
   SITE_NAME,
 } from "@/lib/site";
@@ -36,16 +34,6 @@ export function Footer() {
             <li>
               <a className="hover:text-gold-soft" href={`mailto:${CONTACT_EMAIL}`}>
                 {CONTACT_EMAIL}
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:text-gold-soft"
-                href={INSTAGRAM_URL}
-                rel="noreferrer"
-                target="_blank"
-              >
-                Instagram {INSTAGRAM_HANDLE}
               </a>
             </li>
             <li>

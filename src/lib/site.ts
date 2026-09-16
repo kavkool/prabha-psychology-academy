@@ -21,11 +21,6 @@ export const PAID_BOOKING_URL =
   process.env.PAID_BOOKING_URL ||
   "https://calendly.com/prabha-malarkannan/lesson";
 
-export const INSTAGRAM_HANDLE = "@prabhapsychology";
-export const INSTAGRAM_URL =
-  process.env.NEXT_PUBLIC_INSTAGRAM_URL ||
-  "https://instagram.com/prabhapsychology";
-
 export const PREPLY_URL = "https://preply.com/en/tutor/5078532";
 export const PREPLY_LESSONS = 833;
 export const PREPLY_RATING = 4.67;
