@@ -40,7 +40,7 @@ export function HowItWorks() {
           </p>
           <h2
             id="how-heading"
-            className="mt-2 font-display text-2xl font-semibold tracking-tight text-navy sm:text-3xl"
+            className="mt-2 font-display text-2xl font-semibold text-navy sm:text-3xl"
           >
             Three steps to exam-ready writing
           </h2>

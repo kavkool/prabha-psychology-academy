@@ -43,7 +43,7 @@ export function Programs() {
           </p>
           <h2
             id="programs-heading"
-            className="mt-2 font-display text-2xl font-semibold tracking-tight text-navy sm:text-3xl"
+            className="mt-2 font-display text-2xl font-semibold text-navy sm:text-3xl"
           >
             Coaching for the exam you sit
           </h2>

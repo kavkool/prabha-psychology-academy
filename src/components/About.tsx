@@ -49,7 +49,7 @@ export function About() {
           </p>
           <h2
             id="about-heading"
-            className="mt-2 font-display text-2xl font-semibold tracking-tight text-navy sm:text-3xl"
+            className="mt-2 font-display text-2xl font-semibold text-navy sm:text-3xl"
           >
             Examiner insight. Student-centered coaching.
           </h2>

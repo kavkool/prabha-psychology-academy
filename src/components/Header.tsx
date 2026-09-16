@@ -29,7 +29,7 @@ export function Header() {
               P
             </span>
           </span>
-          <span className="font-display text-[1.05rem] font-semibold tracking-tight text-navy">
+          <span className="font-display text-[1.05rem] font-semibold text-navy">
             {SITE_NAME}
           </span>
         </a>

@@ -76,3 +76,11 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  .font-display {
+    font-optical-sizing: auto;
+    font-variation-settings: "SOFT" 40, "opsz" 72;
+    letter-spacing: 0.015em;
+  }
+}

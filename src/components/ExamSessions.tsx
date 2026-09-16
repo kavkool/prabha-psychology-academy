@@ -15,7 +15,7 @@ export function ExamSessions() {
             </p>
             <h2
               id="exam-sessions-heading"
-              className="mt-2 font-display text-xl font-semibold tracking-tight sm:text-2xl"
+              className="mt-2 font-display text-xl font-semibold sm:text-2xl"
             >
               Plan around your series
             </h2>

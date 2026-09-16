@@ -18,7 +18,7 @@ export function Hero() {
           </p>
           <h1
             id="hero-heading"
-            className="font-display text-3xl font-semibold leading-[1.15] tracking-tight text-balance sm:text-4xl lg:text-[2.75rem]"
+            className="font-display text-3xl font-medium leading-[1.4] tracking-[0.02em] text-balance sm:text-4xl sm:leading-[1.35] lg:text-[2.6rem] lg:leading-[1.32] lg:tracking-[0.025em]"
           >
             Exam-ready Psychology coaching, grounded in real understanding.
           </h1>

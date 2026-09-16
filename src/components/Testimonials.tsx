@@ -32,7 +32,7 @@ export function Testimonials() {
           </p>
           <h2
             id="testimonials-heading"
-            className="mt-2 font-display text-2xl font-semibold tracking-tight text-navy sm:text-3xl"
+            className="mt-2 font-display text-2xl font-semibold text-navy sm:text-3xl"
           >
             Results that speak
           </h2>

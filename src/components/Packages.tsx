@@ -61,7 +61,7 @@ export function Packages() {
           </p>
           <h2
             id="packages-heading"
-            className="mt-2 font-display text-2xl font-semibold tracking-tight text-navy sm:text-3xl"
+            className="mt-2 font-display text-2xl font-semibold text-navy sm:text-3xl"
           >
             Pathways: enquire for details
           </h2>

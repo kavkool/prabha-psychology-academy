@@ -11,7 +11,7 @@ export function FinalCta() {
       <div className="relative mx-auto max-w-2xl px-4 text-center sm:px-6">
         <h2
           id="cta-heading"
-          className="font-display text-2xl font-semibold tracking-tight text-balance sm:text-3xl"
+          className="font-display text-2xl font-semibold text-balance sm:text-3xl"
         >
           Book a free 20-minute trial lesson
         </h2>

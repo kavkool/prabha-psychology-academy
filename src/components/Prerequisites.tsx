@@ -9,7 +9,7 @@ export function Prerequisites() {
         <div className="mx-auto max-w-3xl text-center">
           <h2
             id="who-heading"
-            className="font-display text-xl font-semibold tracking-tight text-navy sm:text-2xl"
+            className="font-display text-xl font-semibold text-navy sm:text-2xl"
           >
             Who it&apos;s for
           </h2>
