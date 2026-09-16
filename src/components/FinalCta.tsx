@@ -16,8 +16,8 @@ export function FinalCta() {
           Ready to start? Free trial or paid lesson
         </h2>
         <p className="mx-auto mt-3 max-w-md text-sm text-cream/75">
-          Book a free 20-minute trial on Google Calendar, or schedule a paid
-          lesson on Calendly. Share your syllabus, private-candidate status, and
+          Book a free 20-minute trial, or schedule a paid lesson. Share your
+          syllabus, private-candidate status, and
           time zone when you book.
         </p>
         <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">

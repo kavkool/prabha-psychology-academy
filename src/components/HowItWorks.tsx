@@ -4,12 +4,12 @@ const STEPS = [
   {
     n: "01",
     title: "Free trial",
-    body: "Book 20 minutes on Google Calendar to map syllabus, goals, and fit. No pressure.",
+    body: "Book 20 minutes to map syllabus, goals, and fit. No pressure.",
   },
   {
     n: "02",
     title: "Choose how to learn",
-    body: "AS, A Level, fast-track, or 1:1, matched to your exam date — or book a paid lesson when ready.",
+    body: "AS, A Level, fast-track, or 1:1, matched to your exam date, or book a paid lesson when ready.",
   },
   {
     n: "03",
@@ -19,8 +19,8 @@ const STEPS = [
 ];
 
 const LOGISTICS = [
-  { label: "Free trial", value: "Google Calendar appointment" },
-  { label: "Paid lesson", value: "Calendly booking" },
+  { label: "Free trial", value: "20-minute intro booking" },
+  { label: "Paid lesson", value: "Full lesson booking" },
   { label: "Platforms", value: "Meet · Zoom · Teams" },
   { label: "Schedule", value: "Single lesson or weekly slot" },
   { label: "Time zones", value: "Booked in your local time" },
@@ -97,27 +97,6 @@ export function HowItWorks() {
             Book a paid lesson
           </a>
         </div>
-        <p className="mt-4 text-center text-sm text-ink-muted">
-          Free trial via{" "}
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-semibold text-teal underline-offset-2 hover:underline"
-          >
-            Google Calendar
-          </a>
-          ; paid lessons via{" "}
-          <a
-            href={PAID_BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-semibold text-teal underline-offset-2 hover:underline"
-          >
-            Calendly
-          </a>
-          .
-        </p>
       </div>
     </section>
   );
